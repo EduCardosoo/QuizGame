@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="
+    background: url('img/quizbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+">
+
+    <div class="container-fluid text-center bg-warning text-dark p-4">
+        <h1>Quiz Game</h1>
+        <p class="fs-4">Teste seus conhecimentos sobre filmes e séries!</p>
+    </div>
+
+    <div class="mt-5 container shadow-lg p-4 bg-warning">
+        <h1>Perguntas</h1>
+
+        <form id="Quiz">
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">1. Qual foi o primeiro filme do universo cinematográfico da Marvel (MCU)?</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" value="0">
+                    <label class="form-check-label">Capitão América: O Primeiro Vingador</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" value="1">
+                    <label class="form-check-label">Homem de Ferro</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" value="2">
+                    <label class="form-check-label">Thor</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q1" value="3">
+                    <label class="form-check-label">Hulk</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">2. Qual série é famosa por ter o episódio "A Batalha dos Bastardos"?</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2" value="4">
+                    <label class="form-check-label">Game of Thrones</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2" value="5">
+                    <label class="form-check-label">The Witcher</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2" value="6">
+                    <label class="form-check-label">Vikings</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q2" value="7">
+                    <label class="form-check-label">The Last Kingdom</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">3. Em qual ano a série "La Casa de Papel" foi lançada?</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3" value="8">
+                    <label class="form-check-label">2017</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3" value="9">
+                    <label class="form-check-label">2018</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3" value="10">
+                    <label class="form-check-label">2016</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q3" value="11">
+                    <label class="form-check-label">2019</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">4. Qual é o nome verdadeiro do Professor em "La Casa de Papel"?</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4" value="12">
+                    <label class="form-check-label">Andrés de Fonollosa</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4" value="13">
+                    <label class="form-check-label">Sergio Marquina</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4" value="14">
+                    <label class="form-check-label">Pablo Ruiz</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q4" value="15">
+                    <label class="form-check-label">Arturo Román</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">5. Qual é o nome do carro de Dean Winchester na série "Supernatural"?</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q5" value="16">
+                    <label class="form-check-label">Chevrolet Camaro 1969</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q5" value="17">
+                    <label class="form-check-label">Dodge Charger 1970</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q5" value="18">
+                    <label class="form-check-label">Chevrolet Impala 1967</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q5" value="19">
+                    <label class="form-check-label">Ford Mustang 1968</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">6. Qual é o nome completo do protagonista da série "O Atirador"?</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q6" value="20">
+                    <label class="form-check-label">John Reese</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q6" value="21">
+                    <label class="form-check-label">Bob Lee Swagger</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q6" value="22">
+                    <label class="form-check-label">Mark Solomon</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q6" value="23">
+                    <label class="form-check-label">Jack Payne</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">7. Em Breaking Bad, qual é o nome do alter ego de Walter White?</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q7" value="24">
+                    <label class="form-check-label">Red Skull</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q7" value="25">
+                    <label class="form-check-label">Açougueiro de Bay Harbor</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q7" value="26">
+                    <label class="form-check-label">Heisenberg</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q7" value="27">
+                    <label class="form-check-label">Eisenhower</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">8. Qual série mostra um grupo de sobreviventes após um apocalipse zumbi?</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8" value="28">
+                    <label class="form-check-label">Lost</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8" value="29">
+                    <label class="form-check-label">The Walking Dead</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8" value="30">
+                    <label class="form-check-label">The Last Kingdom</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q8" value="31">
+                    <label class="form-check-label">Supernatural</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">9. Qual série mostra uma jovem chamada Eleven com poderes telecinéticos?</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9" value="32">
+                    <label class="form-check-label">The 100</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9" value="33">
+                    <label class="form-check-label">Dark</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9" value="34">
+                    <label class="form-check-label">Stranger Things</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q9" value="35">
+                    <label class="form-check-label">The OA</label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">10. Em Lúcifer, qual é o nome da detetive com quem Lúcifer trabalha?</label>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q10" value="36">
+                    <label class="form-check-label">Linda Martin</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q10" value="37">
+                    <label class="form-check-label">Chloe Decker</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q10" value="38">
+                    <label class="form-check-label">Ella Lopez</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q10" value="39">
+                    <label class="form-check-label">Maze</label>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="container text-center mt-3">
+        <button id="botao" class="btn btn-primary btn-lg">Enviar</button>
+    </div>
+
+    <div class="container mt-4">
+        <div id="resultado" class="alert d-none"></div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
